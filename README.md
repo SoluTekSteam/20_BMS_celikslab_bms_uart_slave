@@ -3,5 +3,5 @@ Uart Communication Software for Ubetter BMS
 
 
 <p align="center">
-  <img width="1000" height="768" src="https://github.com/mcelik7/celikslab/bms_uart_slave/BMS Data Frame.png">
+  <img width="1000" height="768" src="https://github.com/celikslab/bms_uart_slave/blob/main/Bms%20Data%20Frame.png">
 </p>
