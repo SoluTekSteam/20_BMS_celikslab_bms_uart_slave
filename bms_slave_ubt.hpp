@@ -41,7 +41,7 @@ namespace Ubtbat
 
 
 /**
-  * @brief Bms Ubetter Request Type
+  * @brief 	Bms Ubetter Request Type
   */
 #pragma pack(1)
 union bms_ubetter_request_type
@@ -66,7 +66,7 @@ union bms_ubetter_request_type
 
 
 /**
-  * @brief Bms Ubetter Response Type
+  * @brief 	Bms Ubetter Response Type
   */
 #pragma pack(1)
 union bms_ubetter_response_type
@@ -92,29 +92,29 @@ union bms_ubetter_response_type
 
 
 /**
-  * @brief Bms Protection Type
+  * @brief 	Bms Protection Type
   */
 #pragma pack(1)
 union bms_protection_status_type
 {
 	struct
 	{
-		uint16_t cell_overvoltage_protec	:1;		//bit0
+		uint16_t cell_overvoltage_protec	:1;	//bit0
 		uint16_t cell_undervoltage_protec	:1;
 		uint16_t pack_overvoltage_protec	:1;
 		uint16_t pack_undervoltage_protec	:1;
-		uint16_t charging_over_temp			:1;
-		uint16_t charging_low_temp			:1;
+		uint16_t charging_over_temp		:1;
+		uint16_t charging_low_temp		:1;
 		uint16_t discharge_over_temp		:1;
-		uint16_t discharge_low_temp			:1;
+		uint16_t discharge_low_temp		:1;
 		uint16_t charging_over_current		:1;
 		uint16_t discharge_over_current		:1;
-		uint16_t short_circuit				:1;
+		uint16_t short_circuit			:1;
 		uint16_t frontend_detect_ic_error	:1;
-		uint16_t software_lock_mos			:1;
-		uint16_t reverse1					:1;
-		uint16_t reverse2					:1;
-		uint16_t reverse3					:1;
+		uint16_t software_lock_mos		:1;
+		uint16_t reverse1			:1;
+		uint16_t reverse2			:1;
+		uint16_t reverse3			:1;
 	}bits;
 
 	uint16_t u16;
@@ -127,16 +127,16 @@ union bms_protection_status_type
 
 
 /**
-  * @brief Bms Mosfet Control Status Type
+  * @brief 	Bms Mosfet Control Status Type
   */
 #pragma pack(1)
 union fet_control_status_type
 {
 	struct
 	{
-		uint8_t fet_charge_status			:1;		//bit0
-		uint8_t fet_discharge_status		:1;		//bit1
-		uint8_t reverse						:6;		//bit2-7
+		uint8_t fet_charge_status		:1;	//bit0
+		uint8_t fet_discharge_status		:1;	//bit1
+		uint8_t reverse				:6;	//bit2-7
 
 
 	}bits;
@@ -151,7 +151,7 @@ union fet_control_status_type
 
 
 /**
-  * @brief	Date of Manufacture Struct
+  * @brief 	Date of Manufacture Struct
   */
 #pragma pack(1)
 union production_date_type
@@ -197,7 +197,7 @@ union software_version_type
 
 
 /**
-  * @brief Command Cell Data Type
+  * @brief 	Command Cell Data Type
   */
 #pragma pack(1)
 union commnd_cell_data_type
@@ -217,7 +217,7 @@ union commnd_cell_data_type
 
 
 /**
-  * @brief Command Version Data Type
+  * @brief 	Command Version Data Type
   */
 #pragma pack(1)
 union commnd_version_data_type
@@ -237,7 +237,7 @@ union commnd_version_data_type
 
 
 /**
-  * @brief Command Info Data Type
+  * @brief 	Command Info Data Type
   */
 #pragma pack(1)
 union commnd_info_data_type
@@ -287,7 +287,7 @@ union commnd_info_data_type
 
 
 /**
-  * @brief Bms Ubetter Raw Data
+  * @brief 	Bms Ubetter Raw Data
   */
 #pragma pack(1)
 union raw_data_info_type
@@ -324,7 +324,7 @@ union raw_data_info_type
 
 
 /**
-  * @brief Bms Data Type
+  * @brief 	Bms Data Type
   */
 #pragma pack(1)
 union bms_data_type
@@ -364,7 +364,7 @@ union bms_data_type
 
 
 /**
-  * @brief Parse State Enum
+  * @brief	 Parse State Enum
   */
 enum class parse_state_type: uint8_t
 {
@@ -380,7 +380,7 @@ enum class parse_state_type: uint8_t
 
 
 /**
-  * @brief Parse State Enum
+  * @brief 	Parse State Enum
   */
 enum class bms_state_type: uint8_t
 {
